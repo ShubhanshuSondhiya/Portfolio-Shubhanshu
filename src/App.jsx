@@ -1,9 +1,12 @@
 import './App.css'
+import Intro from './pages/Intro'
 
 function App() {
 
   return (
-    <div></div>
+    <div className='background'>
+      <Intro/>
+    </div>
   )
 }
 

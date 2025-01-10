@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Iceland&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.iceland-regular {
+  font-family: "Iceland", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.big-shoulders-display-bShoulder {
+  font-family: "Big Shoulders Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.background {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle at top right,
+    rgb(39, 7, 7) 0%,
+    rgba(0, 0, 0, 1) 20%
+  );
+  width: 100vw;
+  height: 100vh;
+}
