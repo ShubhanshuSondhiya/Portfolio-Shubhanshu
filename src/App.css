@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+/************************ Font Styles ********************/
 .iceland-regular {
   font-family: "Iceland", serif;
   font-weight: 400;
@@ -16,6 +17,8 @@
   font-weight: 600;
   font-style: normal;
 }
+
+/************************ Background ***********************/
 .background {
   background: rgb(0, 0, 0);
   background: radial-gradient(
@@ -26,3 +29,57 @@
   width: 100vw;
   height: 100vh;
 }
+
+/********************** Edge Styling **********************/
+.div_edge {
+  --b: 1px; /* border thickness */
+  --s: 8px; /* size of the corner */
+  --g: 10px; /* the gap */
+  --c: #E84A4A; /* corner color */
+  --line: #161616; /* color of the connecting line */
+
+  padding: calc(var(--b) + var(--g));
+  background-image:
+    /* Top-left corner */
+    conic-gradient(from 90deg at top var(--b) left var(--b), #0000 25%, var(--c) 0),
+    /* Bottom-right corner */
+    conic-gradient(from -90deg at bottom var(--b) right var(--b), #0000 25%, var(--c) 0),
+    /* Top-right corner */
+    conic-gradient(from 180deg at top var(--b) right var(--b), #0000 25%, var(--c) 0),
+    /* Bottom-left corner */
+    conic-gradient(from 0deg at bottom var(--b) left var(--b), #0000 25%, var(--c) 0),
+    /* Top border */
+    linear-gradient(to right, var(--line) 98%, transparent 0),
+    /* Right border */
+    linear-gradient(to bottom, var(--line) 98%, transparent 0),
+    /* Bottom border */
+    linear-gradient(to left, var(--line) 98%, transparent 0),
+    /* Left border */
+    linear-gradient(to top, var(--line) 98%, transparent 0);
+  background-position:
+    var(--_p, 0%) var(--_p, 0%), /* Top-left */
+    calc(100% - var(--_p, 0%)) calc(100% - var(--_p, 0%)), /* Bottom-right */
+    calc(100% - var(--_p, 0%)) var(--_p, 0%), /* Top-right */
+    var(--_p, 0%) calc(100% - var(--_p, 0%)), /* Bottom-left */
+    top left, /* Top border */
+    top right, /* Right border */
+    bottom right, /* Bottom border */
+    bottom left; /* Left border */
+  background-size:
+    var(--s) var(--s), /* Corners */
+    var(--s) var(--s),
+    var(--s) var(--s),
+    var(--s) var(--s),
+    100% var(--b), /* Top border */
+    var(--b) 100%, /* Right border */
+    100% var(--b), /* Bottom border */
+    var(--b) 100%; /* Left border */
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition:
+    background-position 0.3s var(--_i, 0.3s),
+    background-size 0.3s calc(0.3s - var(--_i, 0.3s));
+}
+
+
+/************************* Profile *************************/
