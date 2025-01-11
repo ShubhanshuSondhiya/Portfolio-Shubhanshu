@@ -28,13 +28,13 @@ const ProfilePannel = () => {
         </div>
         <div className="py-1">
           <p className="iceland-regular text-white text-xs">AVALABILITY</p>
-          <p className="big-shoulders-display-bShoulder text-black text-sm bg-[#E84A4A]">
+          <p className="big-shoulders-display-bShoulder text-black text-sm bg-[#E84A4A] p-[1px]">
             OPEN FOR HIRE
           </p>
         </div>
         <div className="py-1">
           <p className="iceland-regular text-white text-xs">SOCIAL</p>
-          <p className="big-shoulders-display-bShoulder text-[#E84A4A] text-xs border-[1px] border-[#E84A4A]">OPEN CONNECTION</p>
+          <p className="big-shoulders-display-bShoulder text-[#E84A4A] text-sm border-[1px] border-[#E84A4A] p-[1px]">OPEN CONNECTION</p>
         </div>
       </div>
       <div>

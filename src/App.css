@@ -76,9 +76,6 @@
     var(--b) 100%; /* Left border */
   background-repeat: no-repeat;
   cursor: pointer;
-  transition:
-    background-position 0.3s var(--_i, 0.3s),
-    background-size 0.3s calc(0.3s - var(--_i, 0.3s));
 }
 
 
