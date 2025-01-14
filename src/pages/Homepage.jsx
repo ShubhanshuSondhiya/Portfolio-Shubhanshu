@@ -3,21 +3,19 @@ import "../App.css";
 
 const Homepage = () => {
   return (
-    <div className="div_edge">
+    <div className="div_edge_img">
       <div
-        className="w-full h-full flex flex-col justify-center items-center"
+        className="w-[60vw] h-[80vh] flex flex-col justify-start items-center p-8"
         style={{
           backgroundImage: `url(${homepage_img})`,
-          backgroundSize: "cover",
+          backgroundSize: "100%",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
-        <p className="text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-          sapiente molestiae, accusantium, non voluptatem iusto quisquam atque
-          dignissimos beatae, perferendis similique. Sint recusandae, veritatis
-          velit dignissimos dolor ex modi perferendis!
+        <p className="text-white uppercase text-sm w-[40vw]">swimming through a vast network of interconnected devices and servers, spreading joy and whimsy to users across the globe
         </p>
+        <p className="text-slate-300 text-xs">Artwork generated with midjourney</p>
       </div>
     </div>
   );
